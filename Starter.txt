@@ -1,0 +1,9 @@
+Because I'm not totally mean..
+I will give you a docker command for running the container..
+and the version of minecraft you should use.
+
+docker pull justingarey/just-for-fun:exploitable-minecraft
+
+sudo docker run -it --ulimit nofile=122880:122880 -p 25565:25565 IMAGE
+
+Also use Minecraft 1.8.8

